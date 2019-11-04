@@ -1,182 +1,228 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>IT Worker | responsive portfolio template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <!-- Google fonts - Roboto + Roboto Slab-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
-    <!-- owl carousel-->
-    <link rel="stylesheet" href="owl.carousel/assets/owl.carousel.css">
-    <link rel="stylesheet" href="owl.carousel/assets/owl.theme.default.css">
-    <!-- animate.css-->
-    <link rel="stylesheet" href="animate.css/animate.css">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Leaflet CSS - For the map-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="img/favicon.png">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IT Worker | responsive portfolio template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Google fonts - Roboto + Roboto Slab-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+  <!-- owl carousel-->
+  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+  <!-- animate.css-->
+  <link rel="stylesheet" href="vendor/animate.css/animate.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Leaflet CSS - For the map-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/favicon.png">
+  <!-- Tweaks for older IEs-->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-  </head>
-  <body>
-    <!-- Reference item-->
-    <!-- navbar-->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <!-- <div class="container"><a href="#intro" class="navbar-brand scrollTo">龚善/个人主页</a> -->
-          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
-          <div id="navbarcollapse" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="#intro" class="nav-link link-scroll">主页</a></li>
-              <li class="nav-item"><a href="#about" class="nav-link link-scroll">专业技能</a></li>
-              <li class="nav-item"><a href="#services" class="nav-link link-scroll">个人简介</a></li>
-              <!-- <li class="nav-item"><a href="#testimonials" class="nav-link link-scroll">Testimonials</a></li> -->
-              <li class="nav-item"><a href="#references" class="nav-link link-scroll">作品展示</a></li>
-              <li class="nav-item"><a href="#customers" class="nav-link link-scroll">联系我</a></li>
-              <!-- <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li> -->
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- Intro Image-->
-    <section id="intro" style="background: url(img/home.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
-      <div class="container text-center">
-        <div data-animate="fadeInDown" class="logo"><img src="img/gs6.png" alt="logo" width="160"></div>
-        <!-- <div data-animate="fadeInDown" class="logo"><img src="img/logo-big.png" alt="logo" width="130"></div> -->
-        <h1 data-animate="fadeInDown" class="text-shadow mb-5">大家好，我是龚善</h1>
-        <p data-animate="slideInUp" class="h3 text-shadow text-400" style="font-size:22px">我是一名前端工程师，爱好Coding</p>
+</head>
+
+<body>
+  <!-- Reference item-->
+  <!-- navbar-->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <!-- <div class="container"><a href="#intro" class="navbar-brand scrollTo">龚善/个人主页</a> -->
+      <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div id="navbarcollapse" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#intro" class="nav-link link-scroll">主页</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link link-scroll">专业技能</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link link-scroll">个人简介</a>
+          </li>
+          <!-- <li class="nav-item"><a href="#testimonials" class="nav-link link-scroll">Testimonials</a></li> -->
+          <li class="nav-item">
+            <a href="#references" class="nav-link link-scroll">项目作品</a>
+          </li>
+          <li class="nav-item">
+            <a href="#customers" class="nav-link link-scroll">联系我</a>
+          </li>
+          <!-- <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li> -->
+        </ul>
       </div>
-    </section>
-    <!-- About-->
-    <section id="about" class="about-section">
-      <div class="container">
-        <header class="text-center">
-          <h2 data-animate="fadeInDown" class="title">专业技能</h2>
-        </header>
-        <div class="row">
-          <div data-animate="fadeInUp" class="col-lg-6">
-            <p>深刻理解web标准，熟悉html5新标签语意，能合理利用语意标签布局页面;</p><br>
-            <p>熟悉csss以及css3新特性属性及相关用法，有一定开发经验；了解css预编译语言stylus;</p><br>
-            <p>熟练使用JavaScript编程，闭包，原型，原型链，继承(圣杯模式)，作用域和作用域链
-              数组，预编译，事件循环机制原理，深度克隆，显隐式转换等日常编程;</p><br>
-            <p>熟练使用Vue开发使用,工作中开发过实际项目;</p><br>
-            <p>熟悉jQuery语法和使用;</p><br>
-            <p>熟悉JavaScript、Ajax、Jsonp、DOM等前端技术;</p><br>
-            <p>熟练使用Git,日常使用Git管理同步代码;</p><br>
-            <p>熟练Photoshop所有操作;</p><br>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-6">
-            <div class="skill-item">
-              <div class="progress-title">HTML</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 90%" aria-valuenow="0" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">CSS</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 90%" aria-valuenow="0" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">Javascript</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 80%" aria-valuenow="70" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill2"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">vue</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 70%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">jquery</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">ajax</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 80%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">git</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 80%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">PhotoShop</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 90%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
-              </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Intro Image-->
+  <section id="intro" style="background: url(img/home.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
+    <div class="container text-center">
+      <div data-animate="fadeInDown" class="logo">
+        <img src="img/gs6.png" alt="logo" width="160">
+      </div>
+      <!-- <div data-animate="fadeInDown" class="logo"><img src="img/logo-big.png" alt="logo" width="130"></div> -->
+      <h1 data-animate="fadeInDown" class="text-shadow mb-5">大家好，我是龚善</h1>
+      <p data-animate="slideInUp" class="h3 text-shadow text-400" style="font-size:22px">我是一名前端工程师，爱好Coding</p>
+    </div>
+  </section>
+  <!-- About-->
+  <section id="about" class="about-section">
+    <div class="container">
+      <header class="text-center">
+        <h2 data-animate="fadeInDown" class="title">专业技能</h2>
+      </header>
+      <div class="row">
+        <div data-animate="fadeInUp" class="col-lg-6">
+          <p>深刻理解web标准，熟悉html5新标签语意，能合理利用语意标签布局页面;</p>
+          <br>
+          <p>熟悉csss以及css3新特性属性及相关用法，有一定开发经验；了解css预编译语言stylus;</p>
+          <br>
+          <p>熟练使用JavaScript编程，闭包，原型，原型链，继承(圣杯模式)，作用域和作用域链 数组，预编译，事件循环机制原理，深度克隆，显隐式转换等日常编程;
+          </p>
+          <br>
+          <p>熟悉ES6新特性和使用
+          </p>
+          <br>
+          <p>熟练使用Vue开发使用,工作中开发过实际项目;</p>
+          <br>
+          <p>熟悉jQuery语法和使用;</p>
+          <br>
+          <p>熟悉JavaScript、Ajax、Jsonp、DOM等前端技术;</p>
+          <br>
+          <p>熟练使用Git,日常使用Git管理同步代码;</p>
+          <br>
+          <p>熟练Photoshop所有操作;</p>
+          <br>
+        </div>
+        <div data-animate="fadeInUp" class="col-lg-6">
+          <div class="skill-item">
+            <div class="progress-title">HTML</div>
+            <div class="progress">
+              <div role="progressbar" style="width: 90%" aria-valuenow="0" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
             </div>
           </div>
-          <!-- <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/about.jpg" alt="This is me - IT worker" class="image rounded-circle img-fluid"></div> -->
+          <div class="skill-item">
+            <div class="progress-title">CSS</div>
+            <div class="progress">
+              <div role="progressbar" style="width: 90%" aria-valuenow="0" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-title">Javascript</div>
+            <div class="progress">
+              <div role="progressbar" style="width: 80%" aria-valuenow="70" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill2"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-title">ES6</div>
+            <div class="progress">
+              <div role="progressbar" style="width: 80%" aria-valuenow="70" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill2"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-title">vue</div>
+            <div class="progress">
+              <div role="progressbar" style="width: 70%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-title">jquery</div>
+            <div class="progress">
+              <div role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-title">ajax</div>
+            <div class="progress">
+              <div role="progressbar" style="width: 80%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-title">git</div>
+            <div class="progress">
+              <div role="progressbar" style="width: 80%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-title">PhotoShop</div>
+            <div class="progress">
+              <div role="progressbar" style="width: 90%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/about.jpg" alt="This is me - IT worker" class="image rounded-circle img-fluid"></div> -->
+      </div>
+    </div>
+  </section>
+  <!-- Service-->
+  <section id="services" class="bg-gradient services-section">
+    <div class="container">
+      <header class="text-center">
+        <h2 data-animate="fadeInDown" class="title">个人简介</h2>
+      </header>
+      <div class="row services text-center">
+        <div data-animate="fadeInUp" class="col-lg-4">
+          <!-- <div class="icon"><i class="fa fa-search"></i></div> -->
+          <h3 class="heading mb-3 text-400">基本信息</h3>
+          <p class="text-left description">姓名：龚善</p>
+          <p class="text-left description">生日：1987.5</p>
+          <p class="text-left description">电话：13602649736</p>
+          <p class="text-left description">邮箱：449202954@qq.com</p>
+          <p class="text-left description">个人作品1：https://gshany.github.io/index</p>
+          <p class="text-left description">个人作品2：https://gitee.com/gshany</p>
+        </div>
+        <div data-animate="fadeInUp" class="col-lg-4">
+          <!-- <div class="icon"><i class="fa fa-html5"></i></div> -->
+          <h3 class="heading mb-3 text-400">工作经验</h3>
+          <p class="text-left description">2018/11-2019/3 深圳市中软国际 Web前端开发
+            <br>
+            <span style="color:rgba(255, 255, 255,.6)"> 负责华为项目开发，根据项目拆分，使用Vue框架，独立开发搜索功能、周报、表单等模块功能，使用element-ui实现表单样式，通过前后端ajax数据交互展示。 通过Axios请求后端接口实现数据交互，Source Tree管理代码以及SVN上传下载文件，修改项目测试阶段的各种Bug,团队协作确保项目高效按时上线</span>
+          </p>
+          <p class="text-left description">2018/4-2019/10 深圳智乐园科技股份公司 web前端开发
+            <br>
+            <span style="color:rgba(255, 255, 255,.6)"> 配合公司其他开发人员，主要使用原生js开发和es6音视频的文字展示逻辑，以及公司的官方的的页面重建，和各个区块功能的实现
+            </span>
+          </p>
+          <p class="text-left description">2016/7-2018/3 深圳鸿伟科技 网页设计
+            <br>
+            <span style="color:rgba(255, 255, 255,.6)"> 使用DIV+CSS布局模式完成网页布局,各大主流浏览器进行兼容性处理， 使用原生js和JQuery框架写出网页各种特效,查询bug并进行修复
+            </span>
+          </p>
+          <p class="text-left description">2009/1-2016/6 深圳唯彩数码 深圳广仁德 广告设计
+            <br>
+            <span style="color:rgba(255, 255, 255,.6)"> 工作描述：切图 设计
+            </span>
+          </p>
+        </div>
+        <div data-animate="fadeInUp" class="col-lg-4">
+          <!-- <div class="icon"><i class="fa fa-tachometer"></i></div> -->
+          <h3 class="heading mb-3 text-400">教育经历</h3>
+          <p class="text-left description">2005/9-2008.9湖南铁道职业技术学院 计算机专业 全日制大专</p>
+          <!-- <p class="text-left description">计算机专业 全日制大专</p> -->
         </div>
       </div>
-    </section>
-    <!-- Service-->
-    <section id="services" class="bg-gradient services-section">
-      <div class="container">
-        <header class="text-center">
-          <h2 data-animate="fadeInDown" class="title">个人简介</h2>
-        </header>
-        <div class="row services text-center">
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <!-- <div class="icon"><i class="fa fa-search"></i></div> -->
-            <h3 class="heading mb-3 text-400">基本信息</h3>
-            <p class="text-left description">姓名：龚善</p>
-            <p class="text-left description">生日：1987.5</p>
-            <p class="text-left description">电话：13602649736</p>
-            <p class="text-left description">邮箱：449202954@qq.com</p>
-            <p class="text-left description">个人作品1：https://gshany.github.io/index</p>
-            <p class="text-left description">个人作品2：https://gitee.com/gshany</p>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <!-- <div class="icon"><i class="fa fa-html5"></i></div> -->
-            <h3 class="heading mb-3 text-400">工作经验</h3>
-            <p class="text-left description">2018/11-2019/3  深圳市中软国际  Web前端开发 <br><span style="color:rgba(255, 255, 255,.6)"> 工作描述：
-              开发华为项目，通过Vue开发独立模块，javascript/css/element-ui等实现网页功能，Axios请求后端接口实现数据交互，Source Tree管理代码以及SVN上传下载文件，修改项目测试阶段,的各种Bug,团队协作确保项目高效按时上线</span></p>
-            <p class="text-left description">2018/4-2019/10 深圳智乐园科技股份公司 web前端开发 <br><span style="color:rgba(255, 255, 255,.6)"> 工作描述：
-              配合公司需要，开发和维护公司的官方的网站</span></p>
-            <p class="text-left description">2016/7-2018/3 深圳鸿伟科技 网页设计 <br><span style="color:rgba(255, 255, 255,.6)"> 工作描述：
-              静态页面布局，网页切图，js功能交互</span></p>
-            <p class="text-left description">2009/1-2016/6 深圳唯彩数码 深圳广仁德 广告设计 <br><span style="color:rgba(255, 255, 255,.6)"> 工作描述：
-              设计</span></p>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <!-- <div class="icon"><i class="fa fa-tachometer"></i></div> -->
-            <h3 class="heading mb-3 text-400">教育经历</h3>
-            <p class="text-left description">2005/9-2008.9湖南铁道职业技术学院</p>
-            <p class="text-left description">计算机专业 全日制大专</p>
-          </div>
-        </div>
-        <hr data-animate="fadeInUp">
-        <div data-animate="fadeInUp" class="text-center">
-          <p class="lead">2017年开始接触前端，一个前端demo的实现带给我的是成就感，一个交互的实现让我发出赞叹，至今，不忘初心，每天保持学习状态ing</p>
-          <!-- <a><a href="#contact" class="btn btn-outline-light link-scroll">Contact me</a></p> -->
-        </div>
+      <hr data-animate="fadeInUp">
+      <div data-animate="fadeInUp" class="text-center">
+        <p class="lead">2017年开始接触前端，一个前端demo的实现带给我的是成就感，一个交互的实现让我发出赞叹，至今，不忘初心，每天保持学习状态ing</p>
+        <!-- <a><a href="#contact" class="btn btn-outline-light link-scroll">Contact me</a></p> -->
       </div>
-    </section>
-    <!-- Testimonials-->
-    <section id="testimonials" class="testimonials-section bg-gray">
+    </div>
+  </section>
+  <!-- Testimonials-->
+  <!-- <section id="testimonials" class="testimonials-section bg-gray">
       <div class="container">
         <header class="text-center mb-2">
           <h2 data-animate="fadeInUp" class="title">项目展示</span></h2>
@@ -255,9 +301,9 @@
           </li>
         </ul>
       </div>
-    </section>
-    <!-- Statistics-->
-    <section id="statistics" data-dir="up" style="background: url(&quot;img/parallax.jpg&quot;);" class="statistics-section text-white parallax parallax">
+    </section> -->
+  <!-- Statistics-->
+  <!-- <section id="statistics" data-dir="up" style="background: url(&quot;img/parallax.jpg&quot;);" class="statistics-section text-white parallax parallax">
       <div class="container">
         <div class="row showcase text-center"> 
           <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
@@ -287,56 +333,150 @@
         </div>
       </div>
       <div class="dark-mask"></div>
-    </section>
-    <div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
-    <!--
+    </section> -->
+  <div class="tlinks">Collect from
+    <a href="http://www.cssmoban.com/" title="网站模板">网站模板</a>
+  </div>
+  <!--
     *** REFERENCES IMAGE ***
     _________________________________________________________
     -->
-    <section id="references">
-      <div class="container">
-        <div class="col-sm-12">
-          <div class="mb-5 text-center">
-            <h2 data-animate="fadeInUp" class="title">My work</h2>
-            <p data-animate="fadeInUp" class="lead">I have worked on dozens of projects so I have picked only the latest for you.</p>
-          </div>
-          <ul id="filter" data-animate="fadeInUp">
-            <li class="active"><a href="#" data-filter="all">All</a></li>
-            <li><a href="#" data-filter="webdesign">Webdesign</a></li>
-            <li><a href="#" data-filter="seo">SEO</a></li>
-            <li><a href="#" data-filter="marketing">Marketing</a></li>
-            <li><a href="#" data-filter="other">Other</a></li>
-          </ul>
-          <div id="detail">
-            <div class="row">
-              <div class="col-lg-10 mx-auto"><span class="close">×</span>
-                <div id="detail-slider" class="owl-carousel owl-theme"></div>
-                <div class="text-center">
-                  <h1 id="detail-title" class="title"></h1>
-                </div>
-                <div id="detail-content"></div>
+  <section id="references">
+    <div class="container">
+      <div class="col-sm-12">
+        <div class="mb-5 text-center">
+          <h2 data-animate="fadeInUp" class="title">项目作品</h2>
+          <!-- <p data-animate="fadeInUp" class="lead">I have worked on dozens of projects so I have picked only the latest for you.</p> -->
+        </div>
+        <!-- <ul id="filter" data-animate="fadeInUp">
+          <li class="active">
+            <a href="#" data-filter="all">所有</a>
+          </li>
+          <li>
+            <a href="#" data-filter="webdesign">布局</a>
+          </li>
+          <li>
+            <a href="#" data-filter="seo">JavaScript</a>
+          </li>
+          <li>
+            <a href="#" data-filter="marketing">Vue</a>
+          </li>
+          <li>
+            <a href="#" data-filter="other">其他</a>
+          </li>
+        </ul> -->
+        <div id="detail">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <span class="close">×</span>
+              <div id="detail-slider" class="owl-carousel owl-theme"></div>
+              <div class="text-center">
+                <h1 id="detail-title" class="title"></h1>
               </div>
+              <div id="detail-content"></div>
             </div>
           </div>
-          <!-- Reference detail-->
-          <div id="references-masonry" data-animate="fadeInUp">
-            <div class="row">
+        </div>
+        <!-- Reference detail-->
+        <div id="references-masonry" data-animate="fadeInUp">
+          <div class="row">
+
+
+                  <!-- 9 -->
                   <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/portfolio-1.jpg" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Project name</h3>
-                            <p>Short project description goes here...</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
-                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
-                      </div>
+                    <div class="referene">
+                      <a href="http://www.ifeng.com">
+                        <img src="img/project9.jpg" alt="" class="img-fluid">
+                      </a>
                     </div>
                   </div>
-                  <div data-category="seo" class="reference-item col-lg-3 col-md-6">
+            <!-- 2 -->
+            <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+              <div class="referene">
+                <a href="http://www.ifeng.com">
+                  <img src="img/project2.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+            <!-- 1 -->
+
+            <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+              <div class="referene">
+                <a href="http://www.ifeng.com">
+                  <img src="img/project1.jpg" alt="" class="img-fluid">
+                  <!-- <div class="overlay">
+                    <div class="inner">
+                      <h3 class="h4 reference-title">Project name</h3>
+                      <p>Short project description goes here...</p>
+                    </div>
+                  </div> -->
+                </a>
+                <!-- <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                  <p>Proje. Day behaviour </p>
+                  <p>Sitting mistake .</p>
+                  <p class="buttons text-center">
+                    <a href="javascript:void(0);" class="btn btn-outline-primary">
+                      <i class="fa fa-globe"></i> Visit website</a>
+                    <a href="javascript:void(0);" class="btn btn-outline-primary">
+                      <i class="fa fa-download"></i> Download case study</a>
+                  </p>
+                </div> -->
+              </div>
+            </div>
+
+             <!-- 3 -->
+             <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+              <div class="referene">
+                <a href="#">
+                  <img src="img/project3.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+             
+                <!-- 5 -->
+             <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+              <div class="referene">
+                <a href="#">
+                  <img src="img/project5.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+              <!-- 6 -->
+              <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                <div class="referene">
+                  <a href="#">
+                    <img src="img/project6.jpg" alt="" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+                <!-- 7 -->
+             <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+              <div class="referene">
+                <a href="#">
+                  <img src="img/project7.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+              <!-- 8 -->
+              <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                <div class="referene">
+                  <a href="#">
+                    <img src="img/project8.jpg" alt="" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+               <!-- 4 -->
+               <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                <div class="referene">
+                  <a href="#">
+                    <img src="img/project4.jpg" alt="" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+          
+
+
+            <!-- <div data-category="seo" class="reference-item col-lg-3 col-md-6">
                     <div class="reference"><a href="#"><img src="img/portfolio-2.jpg" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
@@ -350,9 +490,11 @@
                         <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
                       </div>
                     </div>
-                  </div>
-                  <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/portfolio-3.jpg" alt="" class="img-fluid">
+                  </div> -->
+
+
+            <!-- <div data-category="marketing" class="reference-item col-lg-3 col-md-6"> -->
+            <!-- <div class="reference"><a href="#"><img src="img/portfolio-3.jpg" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
                             <h3 class="h4 reference-title">Project name 3</h3>
@@ -364,9 +506,11 @@
                         <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
                         <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
                       </div>
-                    </div>
-                  </div>
-                  <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
+                    </div> -->
+          </div>
+
+
+          <!-- <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
                     <div class="reference"><a href="#"><img src="img/portfolio-4.jpg" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
@@ -381,6 +525,8 @@
                       </div>
                     </div>
                   </div>
+
+
                   <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
                     <div class="reference"><a href="#"><img src="img/portfolio-5.jpg" alt="" class="img-fluid">
                         <div class="overlay">
@@ -394,8 +540,10 @@
                         <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
                         <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
                       </div>
-                    </div>
+                    </div> 
                   </div>
+
+
                   <div data-category="other" class="reference-item col-lg-3 col-md-6">
                     <div class="reference"><a href="#"><img src="img/portfolio-6.jpg" alt="" class="img-fluid">
                         <div class="overlay">
@@ -411,6 +559,8 @@
                       </div>
                     </div>
                   </div>
+
+
                   <div data-category="seo" class="reference-item col-lg-3 col-md-6">
                     <div class="reference"><a href="#"><img src="img/portfolio-7.jpg" alt="" class="img-fluid">
                         <div class="overlay">
@@ -425,8 +575,10 @@
                         <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
                       </div>
                     </div>
-                  </div>
-                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                  </div> -->
+
+
+          <!-- <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
                     <div class="reference"><a href="#"><img src="img/portfolio-8.jpg" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
@@ -440,14 +592,15 @@
                         <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
                       </div>
                     </div>
-                  </div>
-            </div>
-          </div>
+                  </div> -->
+
         </div>
       </div>
-    </section>
-    <!-- Customers-->
-    <section id="customers" class="customers-section bg-gray">
+    </div>
+    </div>
+  </section>
+  <!-- Customers-->
+  <!-- <section id="customers" class="customers-section bg-gray">
       <div class="container">
         <div class="col-md-12">
           <div class="row align-items-center">
@@ -472,9 +625,9 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- Contact-->
-    <!-- <section id="contact" data-animate="bounceIn" class="contact-section contact">
+    </section> -->
+  <!-- Contact-->
+  <!-- <section id="contact" data-animate="bounceIn" class="contact-section contact">
       <div class="container">
         <header class="text-center">
           <h2 class="title">联系我</h2>
@@ -510,33 +663,22 @@
         </div>
       </div>
     </section> -->
-    <!-- Map-->
-  
-    <footer class="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-lg-left">
-            <p class="social"><a href="#" class="external facebook wow fadeInUp"><i class="fa fa-facebook"></i></a><a href="#" data-wow-delay="0.2s" class="external instagram wow fadeInUp"><i class="fa fa-instagram"></i></a><a href="#" data-wow-delay="0.4s" class="external gplus wow fadeInUp"><i class="fa fa-google-plus"></i></a><a href="#" data-wow-delay="0.6s" class="email wow fadeInUp"><i class="fa fa-envelope"></i></a></p>
-          </div>
-          <!-- /.6-->
-          <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
-            <p>© 2018 Bootstrapious. All rights reserved.</p>
-          </div>
-          <div class="col-12 mt-4">
-            <p>More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-            
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- JavaScript files-->
-    <script src="jquery/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="jquery.cookie/jquery.cookie.js"> </script>
-    <script src="owl.carousel/owl.carousel.min.js"></script>
-    <script src="waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="jquery.counterup/jquery.counterup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
-    <script src="js/front.js"></script>
-  </body>
+  <!-- Map-->
+
+  <footer class="main-footer" style="height:20px">
+    <div class="footer" style="text-align:center">
+      <p>Copyright © 2015 - 2026 gshany.github.io 所有 粤ICP备17012254号 </p>
+    </div>
+  </footer>
+  <!-- JavaScript files-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+  <script src="js/front.js"></script>
+</body>
+
 </html>
