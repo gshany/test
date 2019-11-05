@@ -1,0 +1,335 @@
+
+.body,html{
+    width: 100%;
+    height: 100%;
+    font-style: normal;
+}
+
+
+
+.container{
+    position: relative;
+   
+    height: 300px;
+    width: 300px;
+  
+    padding: 30px 10px 10px 10px;
+    box-sizing: border-box;
+    /* 行高设置在这里 */
+}
+
+.container .switch-menu span {
+    width: 50%;
+    line-height: 26px;
+    text-align: center;
+    font-size:13px;
+    font-weight: 600;
+    color:#9b9b9b;
+    cursor: pointer;
+    
+}
+
+.container .switch-menu {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+}
+
+.container .switch-menu .selected{
+    color:rgb(51,51,51);
+    border-bottom:1px solid #494949;
+    margin-bottom: -1px;     /*不是margin-top*/
+}
+
+.form .form-tip {
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-bottom: 10px;
+}
+
+.form .form-tip span{
+    color:rgb(65, 172, 82); 
+}
+
+.form .form-phone {
+    position: relative;
+    
+    margin-bottom: 10px;
+    /* border: 1px solid #d3d3d3; */
+}
+
+.form .form-phone input{
+    width: 100%;
+    height: 33px;
+    border-radius: 3px;
+   
+    padding: 0 10px 0 60px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.form .form-phone .country-code{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    background: #fff;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.form .form-phone .country-code::after {
+    position: absolute;
+    right: 0;
+    top: 6px;;
+    width:1px;
+    height: 20px;
+    content: " ";
+    display: block;
+    background:  #d3d3d3;
+}
+
+
+.form .form-phone .country-code-contain .dialog-opacity{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.5);
+    z-index: 1;
+}
+
+.form .form-phone .country-code-contain .dialog-list{
+    position: absolute;
+    top:20px;
+    left: 8px;
+    /* right: 0; */
+    /* bottom: 0; */
+    margin: auto;  
+    width: 285px;
+    height: 225px;
+    background:#fff;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.form .form-phone .country-code-contain .dialog-opacity .dialog-list ul li.checked .country{
+    color: rgb(66,189,86);
+}
+
+.form .form-phone .country-code-contain .dialog-list .iconfont.icon-gouxuan{
+    color: rgb(66,189,86);
+    margin-left:10px;
+    font-size: 13px;
+}
+
+.form .form-phone .country-code-contain .dialog-list .country{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(73,73,73)
+}
+
+.form .form-phone .country-code-contain .dialog-list .code{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(170,170,170)
+}
+
+.form .form-phone .country-code-contain .dialog-list ul li.checked .right{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(66,189,86);
+}
+
+.form .form-phone .country-code-contain .dialog-list ul {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.form .form-phone .country-code-contain .dialog-list li{
+    line-height: 2.6;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.form .form-phone .country-code-contain .dialog-list li:first-child{
+    border-top: 1px solid #e5e5e5;
+}
+
+.form .form-phone .country-code-contain .inter-code {
+    width: 282px;
+    height: 42px;
+    line-height: 42px;
+    background: rgb(235,245,235);
+    color: #060;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.form .form-checkCode {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form .form-checkCode input{
+    width: 100%;
+    height: 33px;
+    border-radius: 3px;
+   
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.form .form-checkCode .form-filed-code a{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 13px;
+    color: #41ac52;  
+}
+
+
+
+.form .form-button {
+    margin-bottom: 10px;
+}
+
+.form .form-button button{
+    width: 100%;
+    height: 33px;
+    border-radius: 3px;
+    color: #fff;
+    font-size:15px;
+    font-weight: 700;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #41ac52;
+}
+
+.form .form-button button:disabled{
+    background:rgba(66,189,86,.5);
+    cursor: not-allowed;
+}
+
+.form .form-next {
+    margin-bottom: 10px;
+}
+
+.form .form-next .help-code a{
+    font-size: 13px;
+    color: #41ac52; 
+}
+.form .form-next  label {
+    color:#111;
+    font-size: 13px;
+    
+}
+
+
+.login .other-sign {
+   height: 20px;
+   line-height: 40px;
+   border-top: 1px solid rgb(226, 226, 226);
+}
+
+.login .other-sign .sign-text{
+    color: rgb(155,155,155);
+    font-size: 11px;
+    margin-right:10px; 
+    font-family: Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+
+.iconfont.icon-weixin{
+    font-size: 22px;
+    color: rgb(82, 202, 122);
+    margin-right:10px; 
+}
+.iconfont.icon-weibo-copy{
+    font-size: 22px;
+    color: rgb(255, 115, 100);
+    
+}
+
+
+/* 扫描登录 */
+
+.qrCode .qrCode-login {
+    height: 26px;
+    line-height: 26px;
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    /* text-align: left; */
+    border-bottom:1px solid #ececec;
+}
+
+.qrCode .qrCode-img {
+    text-align: center;
+    font-size: 0;
+}
+
+.qrCode .qrCode-img img{
+    width: 170px;
+    height: 170px;
+    margin-top: 20px; 
+    display:inline-block;  
+}
+
+.qrCode .qrCode-tip {
+    width: 142px;
+    font-size: 12px;
+    padding: 3px 15px;
+    margin:10px auto 0; 
+    color: #494949;
+    background: rgba(0,0,0,.08);
+    border-radius: 12px;
+}
+
+.icon-change {
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.icon-change .icon-pc{
+    width: 30px;
+    height: 30px;
+}
+
+.icon-change .icon-qrCode{
+    width: 30px;
+    height: 30px;
+}
+
+.icon-change .icon-change:hover+div.icon-changeTxt {
+  display: block;
+}
+
+.icon-changeTxt {
+    position: absolute;
+    top:12px;
+    right: 50px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 3px;
+    font-size: 13px;
+    color: rgb(102, 102, 102);;
+    background: #f5faf9;
+    border-radius: 2px;
+    border: 1px solid rgba(66, 189, 86, 0.3);
+    cursor: pointer;
+    display: none;
+}

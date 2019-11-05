@@ -1,0 +1,835 @@
+
+/*首页统一样式*/
+.bg:nth-child(2n) {
+    padding: 20px 0 20px;
+    background: #f7f7f7;
+}
+
+a{
+    color: #37a;
+}
+
+ul li {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1;
+    color: #aaa;
+    word-wrap: break-word;
+}
+
+ a:hover{
+    background: #37a;
+    color: #fff;
+}
+
+a:active {
+    color: #fff;
+    background: #f93;
+}
+
+.adv img {
+    width: 100%;
+    display:block;             /*消除底部白边*/ 
+    margin-bottom: 15px;
+}
+
+.section-title .title {
+    color: #072;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.section-title .title a,
+.section-title .title span
+{
+    font-size: 12px;
+}
+
+.section-title .title .link::before {
+    content:"(";
+    color: #666;
+    font-size: 12px;
+}
+
+.section-title .title .link::after {
+    content:")";
+    color: #666;
+    font-size: 12px;
+}
+
+
+
+.right-section li {
+    display: inline-block;
+    width: 4em;
+    line-height: 20px;
+    margin-top:4px; 
+}
+
+.right-section a {
+ font-size:12px;
+
+}
+
+
+
+
+/*首页统一样式结束*/
+
+
+
+
+
+ /* 头部区域 */
+
+.head{
+    margin: 30px auto 25px;
+}
+
+
+
+.head-log a{                         /* 宽高要设置在a标签，因为背景图在上面，设置在head-log无效啊 */
+    width: 160px;
+    height: 0;  
+    display: block;
+    padding-top:34px;                /*隐藏文字*/                    /*隐藏文字*/
+    overflow: hidden;                /*隐藏文字*/
+    background: url(../images/logo.png) no-repeat left top/160px 34px;
+}
+
+
+ /* 头部搜索区域 */
+
+.head .search{
+    position: relative;
+}
+
+
+.head-input .search-span{
+    width:270px;
+    height: 30px;
+    display: block;
+    overflow: hidden;
+    border:1px rgb(209, 209, 209) solid
+}
+
+.head .head-input input{ 
+    width:240px;
+    font-size:13px;
+    line-height: 30px;
+    padding-left:5px; 
+}
+
+.head .head-input ::-webkit-input-placeholder{
+    color: rgb(173, 173, 173);
+}
+
+.head-log,.search{
+    margin: 0 20px 0 0;
+}
+
+
+
+.head-input .search-ico{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width:30px;
+    height:30px;
+    color: rgb(180, 180, 180);
+    cursor: pointer;
+ }
+
+/* 头部列表区域 */
+.head .list{
+    margin-top:6px; 
+}
+
+.head .list a{
+    float: left;
+    width: 40px;
+    height: 20px;
+    margin-left:17px; 
+    display: block;
+    background: url(../images/nav_logo.png) no-repeat left top/463px 20px;
+}
+
+.head .list .nav-read{
+    background-position: 0 0;
+} 
+
+.head .list .nav-movie{
+    background-position: -60px 0;
+} 
+.head .list .nav-music{
+    background-position: -120px 0;
+} 
+.head .list .nav-group{
+    background-position: -180px 0;
+} 
+.head .list .nav-city{
+    background-position: -240px 0;
+} 
+.head .list .nav-fm{
+    background-position: -300px 0;
+} 
+.head .list .nav-time{
+    background-position: -360px 0;
+} 
+.head .list .nav-doupin{
+    background-position: -420px 0;
+    width: 44px;
+} 
+
+
+
+
+
+/* 登陆区 */
+
+ .login-area{
+    height: 304px; 
+    background: url(../images/login-left.jpg) no-repeat calc(50% + -305px) top/contain #edf4ed;
+   
+ } 
+
+ .login-area .login-wrap{ 
+    position: relative;
+    width: 950px;
+    height: 304px; 
+    margin: 0 auto; 
+   
+} 
+
+iframe {
+    width: 300px;
+    height: 300px;
+}
+
+
+.login-area .login{
+    float: left;
+    width: 300px;
+    height: 304px;
+    box-sizing: border-box;
+}
+
+.login-area .app{
+    position: relative;
+    margin: 92px 20px 0 0;
+    width: 150px;
+    height: 120px;
+}
+
+.app .app-content{
+    width: 150px;
+    height: 120px;
+    margin-right: 50px;
+}
+
+.login-area .app p:first-of-type{
+    font-size:20px;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+.login-area .app p:first-of-type{
+    font-size:25px;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+.login-area .app p:nth-of-type(2){
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+ 
+    color: #fff;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: Helvetica,Arial,sans-serif;
+    background: rgb(0, 189, 0);
+}
+
+
+
+.app .app-icon .ewmm{
+    position: absolute;
+    right: 0;
+    top: 53px;
+    width: 26px;
+    height: 26px;
+    border:1px rgb(0,189,0) solid;
+    border-radius: 2px;
+}
+
+ .app .app-icon .ewmm .ewmm-img{
+     width: 100%;
+     height: 100%;
+     display: block;
+}
+
+.qrCode{ 
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    display: none;
+}
+
+.qrCode .img{
+    width: 160px;
+    height: 160px;
+    padding: 20px 20px 5px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+ .app  .app-icon .qrCode .qrCode-txt {
+    font-size:13px;
+    color: #666;
+    height: 13px;
+    line-height: 13px;
+    padding: 5px 20px 10px;
+    white-space: nowrap;
+}
+
+
+.app-icon:hover .qrCode{
+   
+    display: block;
+    
+}
+
+
+
+
+/* 热门区域 */
+
+/* 热点区 右边区 */
+
+.hot-area{
+    margin-top: 30px;
+}
+
+.hot-content{
+    height: 604px;
+    margin: 0 auto;
+}
+
+.hot-content .aside {
+    width: 265px;
+    height: 504px;
+}
+
+.hot-content .aside ul li{
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+
+
+/* 热点区 main区域 */
+.main{
+  overflow: hidden;  
+}
+
+.main .main-left {
+    width: 350px;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.main .main-left::after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+.main .section-title {
+    margin-left: 10px;
+}
+
+.main .main-left .pic-item  {
+    width: 170px;
+    display:inline-block;
+    vertical-align: top;
+    margin-bottom: 12px;
+}
+
+.main .main-left .pic-item .pic-text {
+    width: 170px;
+}
+
+.main .main-left .pic-item .pic-text .pic-name {
+    font-size: 12px;
+}
+
+.main .main-left .pic-item .pic-text .pic-num {
+    color: #aaa;
+    font-size: 12px;
+    text-align: left;
+}
+
+
+
+.main .main-right {
+    width: 275px;
+    margin-left:30px; 
+}
+
+.main .main-right .tip{
+    margin-top:12px; 
+}
+
+.main .main-right ul li{
+    margin-bottom: 20px;
+}
+
+.main .main-right ul li a {
+    font-size: 12px; 
+}
+
+.main .main-right .method {
+    color: #666;
+    margin-top:5px; 
+    line-height: 20px;
+}
+
+
+/* 时间区 */
+.time-contain{
+    margin: 0 auto;
+}
+
+
+.douban-time .left-area a {
+    font-size: 24px;
+    color: #494949;
+}
+
+.douban-time .left-area a:hover {
+    color: #fff;
+}
+
+ .time-main{
+    overflow: hidden;       /*bfc避开浮动*/
+    width: 820px; 
+    /* margin-top:50px; */
+}
+
+.time-imgItem {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    margin-top:5px;
+}
+
+.time-imgItem .adv {
+    position: relative;
+}
+
+.time-imgItem .adv::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(top, transparent 0%,transparent 50%,rgba(0,0,0,0.2) 100%)
+}
+
+.time-imgItem .time-icon {
+    position: absolute;
+    right: 10px;
+    bottom: -2px;
+    width: 12px;
+    height: 8px;
+}
+
+.time-imgItem .time-title {
+    color:#333;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.time-imgItem .time-title:hover {
+    color:#fff;
+}
+
+.time-imgItem .time-desc {
+    color:#999;
+    line-height: 1;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+
+/* 视频区 */
+
+.video-contain{
+    margin: 0 auto;
+    padding: 40px 0 20px;
+}
+
+.douban-video .left-area a {
+    font-size: 24px;
+    color: #494949;
+}
+
+.douban-video .left-area a:hover {
+    color: #fff;
+}
+
+ .video-main{
+    overflow: hidden;       
+    width: 820px; 
+}
+
+.video-imgItem {
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.video-imgItem:nth-of-type(3n) {
+    margin: 0;
+}
+
+.section-title {
+    margin-top:5px;
+}
+
+.video-imgItem .adv {
+    position: relative;
+}
+
+.video-imgItem .adv::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(50,50,50,.1)
+}
+
+.video-imgItem .video-icon {
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -12px;  
+}
+
+.video-imgItem .video-title {
+    color:#333;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.video-imgItem .video-title:hover {
+    color:#fff;
+}
+
+
+
+
+/* 电影区 */
+
+.movie-contain{
+    margin: 0 auto;
+    padding: 20px 0 20px;
+}
+
+.movie-imgItem {
+    text-align: center;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.douban-moive .adv {
+    width: 100px;
+}
+
+.douban-moive .left-area .movie-txt {
+    font-size: 24px;
+    color: #27a;
+}
+
+.douban-moive .left-area a:hover {
+    color: #fff;
+}
+
+ .movie-main{
+    overflow: hidden;       
+    /* width: 820px;  */
+}
+
+.movie-imgItem .movie-title {
+    color:#333;
+    font-size: 13px;
+    width: 130px !important;
+    line-height: 1.4;
+}
+
+.movie-imgItem .movie-title:hover {
+    color:#fff;
+}
+
+.movie-imgItem .movie-buy {
+    color:#fff;
+    font-size: 12px;
+    padding: 2px 10px;
+    background: rgb(28, 139, 208);
+}
+
+.movie-imgItem .movie-buy:hover {
+    background: #047fcb;
+}
+
+.rating {
+    margin-bottom: 4px;
+}
+
+
+
+.movie-right {
+    width: 265px;
+   
+}
+
+
+.movie-imgItem:nth-of-type(5n) {
+    margin-right: 0;
+}
+
+.douban-moive .lately-hot {
+    margin-top:30px;
+}
+
+.movie-hot li {
+    line-height: 24px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.movie-hot li span {
+  color: #111;
+}
+
+ .movie-hot a {
+    font-size: 12px;
+}
+
+
+
+
+.music-contain {
+    margin: 0 auto;
+    padding: 40px 0 40px;
+}
+
+.music-contain a:hover {
+   color: #fff !important;
+}
+
+.music-contain .left-area .music-txt {
+    color: #f38c00;
+    font-size: 24px;
+}
+
+.music-contain .aside-ul a {
+    color: #555d53;
+}
+
+.music-imgItems .music-img-1 {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 10px;
+    background: url("../images/music-sprit.jpg") no-repeat -250px 0;
+    box-shadow: 1px 1px 2px #999;
+    margin-top:15px;
+}
+
+.music-imgItems .music-img-2 {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 10px;
+    background: url("../images/music-sprit.jpg") no-repeat -50px 1px;
+    box-shadow: 1px 1px 2px #999;
+    margin-top:15px;
+}
+
+ .music-imgItems a,
+ .music-imgItems a {
+    font-size: 12px;
+    color: #555d53;
+}
+
+.music-img {
+    margin-right: 8px;
+}
+
+.music-img  span{
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.music-desc span {
+    color: #555d53;
+    font-size: 14px;
+}
+
+.music-desc span:hover {
+    color: #fff;
+}
+
+.music-desc .tip {
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+}
+
+.music-items .music-item {
+    margin-bottom: 16px;
+}
+
+
+
+.music-items .music-icon {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin: auto;
+   display: block;
+   width: 10px;
+   height: 10px;
+}
+
+
+.music-main {
+    overflow: hidden;
+}
+
+.music-imgItem {
+    display: inline-block;
+    width: 132px;
+   text-align: center;
+}
+
+.music-imgItem img {
+    width: 80px;
+    margin: 0 auto 10px auto;
+}
+
+.music-imgItem .music-title {
+    font-size: 12px;
+    color: #555d53;
+}
+
+.music-imgItem .music-name {
+   margin-bottom: 6px;
+}
+
+.music-right {
+    width: 265px;
+}
+
+.icon-parent {
+    position: relative;
+}
+
+.icon-parent::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;;
+    background:rgba(0,0,0,0.8);
+    display: none;
+}
+
+.icon-parent:hover::before {
+    display: block;
+}
+
+
+
+
+
+
+
+
+.douban-ft {
+
+    margin-bottom: 30px;
+}
+
+.ft-contain{
+    border-top: 1px dashed #dcdcdc;;
+    margin: 0 auto;
+}
+
+.ft-items {
+    margin-top: 20px;
+}
+
+.ft-contain .ft-left {
+    overflow: hidden;
+}
+
+.ft-right a{
+    font-size: 12px;
+}
+
+.ft-right img{
+    margin-top: 20px;
+}
+
+.ft-left {
+    margin-right: 50px;
+}
+
+.ft-left span{
+    color: #999;
+    font-size: 12px;
+}
+
+.ft-left a {
+    font-size: 12px;
+}
+
+.ft-img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ft-img.ft-2{
+    width: 117px;
+    height: 16px;
+}
+
+.ft-img.ft-4 {
+    width: 15px;
+    height: 12px;
+}

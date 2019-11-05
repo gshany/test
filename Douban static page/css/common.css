@@ -1,0 +1,102 @@
+@import"//at.alicdn.com/t/font_1321184_hk97zhb2eaw.css";
+
+.left{
+    float:left
+}
+
+.right{
+    float: right;
+}
+
+.public-width{
+    width: 950px;
+    /* margin: 0 auto; */
+}
+
+.hide {
+    display: none;
+}
+
+
+.body,html{
+    font-family:Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+}
+
+
+.left-area{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.aside-ul {
+    margin-top: 12px;
+}
+
+.aside-ul li {
+    margin-top: 5px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.aside-ul li a {
+    font-size: 14px;
+}
+
+
+.rating-bg {
+    width: 55px;
+    height: 11px;
+    display: inline-block;
+    background: url("../images/star.png") no-repeat left top/55px; 
+}
+
+
+.rating span {
+    font-size: 12px;
+    margin-left: 4px;
+    color: #e09015;
+}
+
+.star50 {
+    background-position: 0 0;
+}
+
+.star45 {
+    background-position: 0 -11px;
+}
+
+.star40 {
+    background-position: 0 -22px;
+}
+
+.star35 {
+    background-position: 0 -33px;
+}
+
+.star30 {
+    background-position: 0 -44px;
+}
+
+.star25 {
+    background-position: 0 -55px;
+}
+
+.star20 {
+    background-position: 0 -66px;
+}
+
+.star15 {
+    background-position: 0 -77px;
+}
+
+.star10 {
+    background-position: 0 -88px;
+}
+
+.star5 {
+    background-position: 0 -99px;
+}
+
+.star0 {
+    background-position: 0 -110px;
+}
