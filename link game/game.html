@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div class="game">
+        <div class="container" style="display: none">
+            <!-- 装图片的容器 -->
+            <div class="img-container">
+                </div>
+            <!-- 倒计时 -->
+            <div class="time">
+                100s
+            </div>
+        </div>
+
+        <div id="divbegin" class="center pointer">
+            开始游戏
+        </div>
+        <div id="divwin" class="center" style="display: none">
+            游戏胜利
+        </div>
+
+        <div id="divfail" class="center" style="display: none">
+            游戏失败
+        </div>
+    </div>
+    <audio id="audbg" loop src="audio/bgmusic.mp3"></audio>
+    <audio id="audlose" src="audio/lose.mp3"></audio>
+    <audio id="audright" src="audio/right.mp3"></audio>
+    <audio id="audwin" src="audio/win.mp3"></audio>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

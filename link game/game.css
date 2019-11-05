@@ -1,0 +1,79 @@
+.game {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("./images/header_bg.jpg") no-repeat center top/cover;
+}
+
+.center {
+    position: absolute;
+    color: #fff;
+    font-size: 3em;
+    background: #555392;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px #eee;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.container {
+    width: 1100px;
+    padding: 25px;
+    background: #555392;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 10px #eee;
+}
+
+.img-container {
+    /* 内部使用网格布局 */
+    display: grid;
+    /* 设置列的数量和尺寸 */
+    /* 将每一行的水平空间均分成6分 */
+    grid-template-columns: repeat(6, 1fr);
+    /* 设置单元格横向和纵向的空隙 */
+    gap: 20px;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.img-container .item{
+    padding: 5px;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    /* 过渡：某些尺寸、颜色类的CSS属性，会在指定的时间内完成变化 */
+    transition: .1s;
+}
+.img-container .item:hover{
+    box-shadow: 0 0 5px 5px #eee;
+}
+
+.img-container .item.active{
+    background: #72ff85;
+    box-shadow: 0 0 5px 5px #72ff85;
+}
+
+.time{
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -80px;
+}
